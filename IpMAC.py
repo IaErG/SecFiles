@@ -5,7 +5,7 @@ def scan(ip):
     broad = scapy.Ether(dst="ff:ff:ff:ff:ff:ff")
     arp_req_broad = broad / arp_req
 
-    answered_list = scapy.srp(arp_req_broad, timeout=1, verbose=False)[0]
+    answered_list = scapy.srp(arp_req_broad, timeout=3, verbose=False)[0]
 
     results = []
 

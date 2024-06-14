@@ -6,7 +6,7 @@ import binascii
 HOST = socket.gethostbyname(socket.gethostname())
 
 # create a raw socket and bind it to the machine IP address
-s = socket.socket(socket.AF_INET, socket.SOCK_RAW, socket.IPPROTO_IP)
+s = socket.socket(socket.AF_INET, socket.SOCK_RAW, 0x800)
 s.bind((HOST, 0))
 
 # Include IP headers

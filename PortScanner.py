@@ -50,7 +50,7 @@ for x in range(100):
    t.daemon = True
    t.start()
 
-# Add port numbers 1-500 to the queue to be analyzed 
+# Add well known port numbers 1-1024 to the queue to be analyzed 
 for port in range(0, 1024):
    q.put(port)
    

@@ -29,7 +29,7 @@ net1 = net.split(a)
 
 net2 = net1[0] + a + net1[1] + a + net1[2] + a
 st1 = 1
-en1 = 41
+en1 = 400
 oper = platform.system()
 
 if (oper == "Windows"):
